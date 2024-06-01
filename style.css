@@ -1,0 +1,825 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.head{
+    height: 40px;
+    background-color: rgba(170, 174, 176, 0.388);
+    position: relative;
+}
+
+.follow{
+    width: 225px;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.follow p{
+    font-size: 10px;
+    padding-top: 4px;
+    padding-left: 45px;
+}
+
+.logo{
+    font-size: 13px;
+    color: gray;
+    padding-top: 3px;
+}
+
+#logo4{
+    color: rgb(1, 1, 66);
+}
+
+.call{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.call .num{
+    font-size: 9px;
+    position: absolute ;
+    top: 40%;
+    right: 35%;
+}
+
+.call #phone{
+    position: absolute;
+    top: 40%;
+    right: 580px;
+    font-size: 13px;
+}
+
+.message{
+    position: absolute;
+    display: flex;
+    top: 33%;
+    right: 10%;
+    gap: 8px;
+}
+
+.message #envelope{
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.message p{
+    font-size: 10px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+.navbar{
+    height: 75px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+}
+
+.image img{
+    width: 180px;
+    margin-left: 80px;
+}
+
+.navbar .options{
+    font-size: 11px;
+    margin-right: -3px;
+    padding-left: 50px;
+}
+
+#red{
+    color: red;
+    font-weight: 600;
+    margin-left: 35px;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+.home{
+    background-image: url(./assests/cover\ pic.png);
+    background-size: cover;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    width: 87%;
+    height: 85vh;
+    margin-right: 0px;
+    margin-left: 80px;
+    z-index: 0;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+
+.home h1{
+    position: absolute;
+    left: 16%;
+    top: 40%;
+    font-size: 40px;
+}
+
+.home p{
+    position: absolute;
+    left: 16%;
+    top: 59%;
+    font-weight: 400;
+}
+
+.home .book{
+    color: white;
+    font-size: 12px;
+    background-color: rgb(40, 177, 136);
+    padding: 13px;
+    position: absolute;
+    left: 16%;
+    top: 70%;
+    border-radius: 5px;
+}
+
+.talk{
+    display: flex;
+    gap: 7px;
+    position: absolute;
+    top: 72%;
+    left: 30%;
+}
+
+.talk i{
+    font-size: 18px;
+}
+
+.talk p{
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+.appointment{
+    z-index: 2;
+    background-color: white;
+    width: 938px;
+    height: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: -67px;
+    margin-left: 160px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+}
+
+.points{
+    margin: 58px 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+
+.appointment h5{
+    position: absolute;
+    font-size: 15px;
+    font-weight: 600;
+    top: 15%;
+    left: 4%;
+}
+.appointment .appointment-form{
+    /* display: flex;
+    flex-direction: column; */
+    position: absolute;
+    padding: 10px 23px 36px 33px;
+    margin-left: 5px;
+    background-color: white;
+    top: 25%;
+    border-radius: 9px;
+    width: 92%;
+}
+.appointment   .appointment-form .form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+.appointment .appointment-form .form .form-name{
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 5px;
+    padding: 5px 25px;
+}
+.appointment .appointment-form .form .form-number{
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.appointment .appointment-form .form .form-date{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 170px;
+    padding: 16px 15px;
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 4px;
+    opacity: .6;
+    font-size: 14px;
+}
+
+.appointment .appointment-form .form .form-date p{
+    font-size: 12px;
+}
+.appointment .appointment-form .form .form-department select{
+    border: 1px solid rgb(18, 18, 18);
+    width: 100%;
+    border-radius: 4px;
+    padding: 16px 12px;
+}
+.appointment .appointment-form .form .form-department select p{
+    color: green;
+}
+.appointment .appointment-form .form .form-doctor select{
+    border: 1px solid rgb(17, 17, 17);
+    width: 100%;
+    border-radius: 4px;
+    padding: 16px 12px;
+}
+.appointment .appointment-form .form button{
+    font-size: 15px;
+    padding: 14px 1px;
+    border-radius: 5px;
+    border: none;
+    background-color: #17C1A3;
+    color: white;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+.dept-cards{
+    width: 87%;
+    height: 85vh;
+    margin-right: 0px;
+    margin-left: 80px;
+    margin-top: 120px;
+}
+
+.dept-cards h5{
+    font-size: 25px;
+}
+
+.dept-images{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image1{
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.image1 img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card1{
+    width: 32%;
+}
+.card2{
+    width: 32%;
+}
+.card3{
+    width: 32%;
+}
+
+.details{
+    padding-top: 30px;
+    height: max-content;
+}
+
+.details p{
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+.details .link{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.details .link a{
+    color:  rgb(40, 210, 159);
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+.why-GG{
+    position: relative;
+    width: 87%;
+    height: 85vh;
+    margin-right: 0px;
+    margin-left: 80px;
+    margin-top: 120px;
+   background-color: rgba(232, 249, 246, 1);
+}
+ 
+#ybg{
+    height: 498px;
+    position: relative;
+}
+ 
+#doc-img{
+    margin-top: 17px;
+    width: 700px;
+    height: 465px;
+    position: absolute;
+    top: 3%;
+    left: 0%;
+}
+ 
+#yghead{
+    position: absolute;
+    top: 21%;
+    left: 64%;
+}
+ 
+#tp1{
+    position: absolute;
+    top: 32%;
+    left: 64%;
+}
+#tp2{
+    position: absolute;
+    top: 42%;
+    left: 64%;
+}
+#tp3{
+    position: absolute;
+    top: 52%;
+    left: 64%;
+}
+#tp4{
+    position: absolute;
+    top: 62%;
+    left: 64%;
+}
+#tp5{
+    position: absolute;
+    top: 72%;
+    left: 64%;
+}
+ 
+#p1{
+    position: absolute;
+    top: 33%;
+    left: 68%;
+}
+#p2{
+    position: absolute;
+    top: 43%;
+    left: 68%;
+}
+#p3{
+    position: absolute;
+    top: 53%;
+    left: 68%;
+}
+#p4{
+    position: absolute;
+    top: 63%;
+    left: 68%;
+}
+#p5{
+    position: absolute;
+    top: 73%;
+    left: 68%;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+.specialist{
+    width: 87%;
+    height: 85vh;
+    margin-right: 0px;
+    margin-left: 80px;
+    margin-top: 120px;
+}
+
+.specialist h4{
+    text-align: center;
+    font-size: 27px;
+}
+
+.specialist p{
+    text-align: center ;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.doctors{
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+}
+
+.doct1{
+    width: 22%;
+    overflow: hidden;
+}
+
+.doct2{
+    width: 22%;
+    overflow: hidden;
+}
+.doct3{
+    width: 22%;
+    overflow: hidden; 
+}
+.doct4{
+    width: 22%;
+    overflow: hidden;
+}
+
+.doct1 img{
+    object-fit: cover;
+    width: 248px;
+    height: 310px;
+}
+
+.doct2 img{
+    object-fit: cover;
+    width: 248px;
+    height: 310px;
+}
+
+.doct3 img{
+    object-fit: cover;
+    width: 248px;
+    height: 310px;
+}
+
+.doct4 img{
+    object-fit: cover;
+    width: 248px;
+    height: 310px;
+}
+
+.doct1 h5{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.doct1 p{
+    font-size: 12px;
+}
+
+.doct2 h5{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.doct2 p{
+    font-size: 12px;
+}
+
+.doct3 h5{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.doct3 p{
+    font-size: 12px;
+}
+
+.doct4 h5{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.doct4 p{
+    font-size: 12px;
+}
+
+.view{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.view button{
+    color: white;
+    font-size: 13px;
+    background-color: #17C1A3;
+    padding: 10px 42px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.facilities{
+    width: 87%;
+    height: 65vh;
+    margin-right: 0px;
+    margin-left: 80px;
+    margin-top: 200px;
+}
+
+.facilities h1{
+    text-align: center;
+}
+
+.facilities .fact-images{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.facilities .fact-images img{
+    width: 350px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+.suggestions{
+        width: 87%;
+        height: 70vh;
+        margin-right: 0px;
+        margin-left: 80px;
+        margin-top: 30px;
+}
+
+.suggestions h1{
+    font-size: 25px;
+    text-align: center;
+}
+
+.interests{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.inter-1{
+    width: 31%;
+    overflow: hidden;
+}
+
+.inter-1 img{
+    width: 348px;
+    height: 210px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.inter-1 h4{
+    margin-top: 16px;
+}
+
+.inter-1 p{
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.inter-1 p span{
+    color: rgb(40, 210, 159);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+.bg{
+    background-color: #EAF2FF;
+    width: 100%;
+    height: 650px;
+    margin-top: -250px;
+}
+
+.subscribe{
+    width: 87%;
+    height: 230px;
+    margin-right: 0px;
+    border-radius: 6px;
+    margin-left: 80px;
+    margin-top: -350px;
+    position: relative;
+    background-color: white;
+}
+
+.subscribe img{
+    object-fit: contain;
+    height: 230px;
+}
+
+.subscribe .text{
+    position: absolute;
+    top: 38%;
+    left: 8%;
+}
+
+.mail{
+    position: absolute;
+    top: 44%;
+    right: 8%;
+    display: flex;
+    gap: 140px;
+}
+
+.mail p{
+    font-size: 16px;
+    margin-top: 12px;
+    color: darkgray;
+    font-weight: 200;
+}
+
+.mail button{
+    color: white;
+    font-size: 13px;
+    background-color: #17C1A3;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 3px;
+    /* margin-top: 20px; */
+    border-radius: 4px;
+}
+
+.subscribe .line{
+    width: 400px;
+    height: 1px;
+    background-color: rgb(69, 67, 67);
+    position: absolute;
+    top: 62%;
+    right: 8%;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+footer{
+    
+    margin-top: 140px;
+    padding: 50px 185px 20px 110px;
+    margin-left: 80px;
+}
+footer .footer-upper{
+    display: flex;
+    padding-bottom: 25px;
+}
+footer .left-gg-info{
+    display: flex;
+    flex-direction: column;
+}
+footer .left-gg-info img{
+    height: 50px;
+    width: 200px;
+}
+footer .left-gg-info p{
+    margin-top: 18px;
+    font-size: 10px;
+    width: 63%;
+    line-height: 20px;
+}
+footer .gg-link {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    width: 100%;
+}
+footer .about-gg{
+    display: flex;
+    flex-direction: column;
+}
+footer .gg-link .about-gg .about-gg-link{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    column-gap: 65px;
+    margin-top: 30px;
+}
+footer .gg-link .about-gg .about-gg-title h5{
+    font-size: 14px;
+    margin-top: 20px;
+}
+footer .gg-link .about-gg .about-gg-link a{
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: .8;
+}
+ 
+footer .legal{
+    display: flex;
+    flex-direction: column;
+}
+footer .gg-link .legal-link{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    column-gap: 65px;
+    margin-top: 30px;
+}
+footer .gg-link .legal-title h5{
+    font-size: 14px;
+    margin-top: 20px;
+}
+footer .gg-link .legal-link a{
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: .8;
+}
+ 
+footer .footer-lower {
+    padding-top: 25px;
+}
+footer .footer-lower .contact-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+footer .essential-info{
+    display: grid;
+    grid-template-columns: .93fr .93fr .93fr;
+}
+footer .footer-lower .contact-container .address{
+    margin-top: 28px;
+    display: flex;
+    gap: 8px;
+}
+footer .footer-lower .contact-container .address i{
+    margin-top: 2px;
+
+}
+footer .footer-lower .contact-container .address p{
+    font-size: 10.5px;
+}
+footer .footer-lower .contact-container .phone{
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+footer .footer-lower .contact-container .phone p{
+    line-height: 5px;
+}
+footer .footer-lower .contact-container .phone i{
+    margin-top: 9px;
+    font-size: 13px;
+}
+footer .footer-lower .contact-container .phone-details{
+    margin-top: 4px;
+}
+footer .footer-lower .contact-container .phone-details p{
+    line-height: 16px;
+    font-size: 10.5px;
+}
+footer .footer-lower .contact-container .email{
+    margin-top: 28px;
+    display: flex;
+    gap: 5px;
+}
+footer .footer-lower .contact-container .email i{
+    margin-top: 5px;
+    font-size: 13px;
+
+}
+footer .footer-lower .contact-container .email-div p{
+    line-height: 16px;
+    font-size: 10.5px;
+}
+/* footer .footer-lower .contact-container .social-media{} */
+footer .footer-lower .contact-container .social-media{
+    margin-top: 15px;
+    margin-left: -30px;
+}
+
+footer .footer-lower .contact-container .social-media-icons{
+    display: flex;
+    gap: 12px;
+}
+footer .footer-lower .contact-container .social-media h5{
+    font-size: 12px;
+    margin-top: 10px;
+}
+footer .footer-lower .contact-container .social-media-icons img{
+    width: 23px;
+    margin-top: 10px;
+}
+footer .copyright{
+    margin-top: 70px;
+    text-align: center;
+    opacity: .5;
+    font-size: 12px;
+}
